@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>ejercicio para prueba</title>
+    <script>
+        function Mostraresultado(){
+             let dato1 = parseInt(prompt("ingrese cantidad  de registro: "));
+             let array = [];
+             dato1 = parseInt(dato1);
+             
+
+             for (i=0; i< dato1;i++)
+             {
+                
+               let elemento= prompt("ingrese valor");
+
+               if(elemento%2==0) { 
+                elemento *= elemento;
+                
+                array.push(elemento);
+            }
+
+            }
+
+             document.write(array);
+
+            let resultadomultiplicado = document.getElementById("resultadomultiplicado");
+            resultadomultiplicado.innerHTML = "<h3>Números pares multiplicados por sí mismos:</h3>";
+            array.forEach(function(item) {
+                resultadomultiplicado.innerHTML += item + "<br>";
+            });
+
+        }
+    </script>
+    
+</head>
+<body>
+    <table width="100%">
+        <tr>
+            <td align="center"><input type="button" value="calcular"
+                onclick="Mostraresultado()"></td>
+
+            <div id="resultadomultiplicado" style="margin-top: 20px;"></div>
+        </tr>
+    </table>
+    
+    
+</body>
+</html>

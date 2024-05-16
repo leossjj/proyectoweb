@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>contactanos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<table align="center" style="width: 50%; border-collapse: collapse; border: 1px solid black;">
+    <nav>
+        <ul>
+            <li><a href="home.html">home</a></li>
+            <li><a href="contacto.html">Contactanos</a></li>
+            <li><a href="login.html">login</a></li>
+        </ul>
+    </nav>
+    
+    <tr>
+        <td align="center" colspan="2" style="border: 1px solid black;">
+            <h2>contactanos</h2>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" style="border: 1px solid black;">Nombre:</td>
+        <td align="center" style="border: 1px solid black;"><input type="text" id="nombre"></td>
+    </tr>
+    <tr>
+        <td align="center" style="border: 1px solid black;">Teléfono:</td>
+        <td align="center" style="border: 1px solid black;"><input type="tel" id="telefono"></td>
+    </tr>
+    <tr>
+        <td align="center" style="border: 1px solid black;">Email:</td>
+        <td align="center" style="border: 1px solid black;"><input type="email" id="email"></td>
+    </tr>
+    <tr>
+        <td align="center" style="border: 1px solid black;">Mensaje:</td>
+        <td align="center" style="border: 1px solid black;"><textarea id="mensaje" rows="4" cols="100"></textarea></td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center" style="border: 1px solid black;">
+            <input type="button" value="Enviar" onclick="enviarMensaje()">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center" id="resultado" style="border: 1px solid black;"></td>
+    </tr>
+</table>
+
+<script>
+    function enviarMensaje() {
+        var mensaje = "Mensaje enviado te contactaremos en un plazo de 24 horas";
+        document.getElementById("resultado").innerHTML = mensaje;
+    }
+</script>
+</body>
+</html>

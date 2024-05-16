@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <table align="center" style="width: 50%; height: 25%; border-collapse: collapse ;" border= "1" >
+        <nav>
+            <ul>
+                <li><a href="home.html">home</a></li>
+                <li><a href="contacto.html">Contactanos</a></li>
+                <li><a href="login.html">login</a></li>
+            </ul>
+        </nav>
+        
+        <tr>
+            <td align="center" style="width: 50%; height: 25%; border-collapse: collapse ;" border= "1">
+                Rut: <input  type="number" id="rut" >
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center" style="width: 50%; height: 25%; border-collapse: collapse ;" border= "1">
+                Clave: <input type="number" id="clave" >
+            </td>
+        </tr>
+
+        <tr>
+            <td align="center" style="width: 100%; height: 40%; border-collapse: collapse ;" border= "1">
+                <input type="button" value="entrar" onclick="enviar()">
+            </td>
+        </tr>
+        
+        <tr id="resultado" align="center"></tr>
+
+    </table>
+</body>
+</html>
